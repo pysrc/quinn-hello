@@ -1,0 +1,12 @@
+[package]
+name = "qserver"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.25.0", features = ["macros", "rt", "rt-multi-thread", "fs", "io-util"] }
+quinn = "0.9.3"
+rustls = { version = "0.20.6", features = ["quic"] }
+rustls-pemfile = "1.0.2"
